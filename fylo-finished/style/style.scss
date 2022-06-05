@@ -5,3 +5,19 @@
    padding: 0;
    box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+body{
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+}
+h1, h2, h3{
+   font-weight: 700;
+}
+
+li{
+   list-style: none;
+}
+
+@import 'mixin';
+@import 'nav';

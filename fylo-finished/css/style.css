@@ -1,2 +1,2 @@
-*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}body{font-family:'Raleway', sans-serif;font-weight:400}h1,h2,h3{font-weight:700}li{list-style:none}.nav{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:red;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.nav_list li{display:inline-block}
 /*# sourceMappingURL=style.css.map */
