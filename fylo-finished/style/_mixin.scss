@@ -1,0 +1,10 @@
+
+@mixin paddingRL($padding){
+      @if $padding != 0{
+         padding-left: $padding;
+         padding-right: $padding;
+      }@else{
+         padding-left: 1.5rem;
+         padding-right: 1.5rem;
+      }
+}

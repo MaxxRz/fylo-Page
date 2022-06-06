@@ -1,10 +1,22 @@
-.nav{
+.nav {
    display: flex;
-   background-color: red;
    align-items: center;
    justify-content: space-between;
+   @include paddingRL(0);
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
+   background-color: $darkBlue;
 
-   &_list li{
+   &_logo {
+      width: 30%;
+      max-width: 250px;
+      min-width: 100px;
+      height: auto;
+   }
+
+   &_list li {
+      color: #fff;
       display: inline-block;
+      padding-left: 1.5rem;
    }
 }

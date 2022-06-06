@@ -7,9 +7,12 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import 'variables';
+
 body{
    font-family: 'Raleway', sans-serif;
    font-weight: 400;
+   font-size: $fontBody;
 }
 h1, h2, h3{
    font-weight: 700;
@@ -18,6 +21,7 @@ h1, h2, h3{
 li{
    list-style: none;
 }
+
 
 @import 'mixin';
 @import 'nav';
