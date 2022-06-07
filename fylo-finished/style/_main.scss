@@ -1,0 +1,48 @@
+.main {
+   text-align: center;
+   background-color: $darkBlue;
+
+   &_Img {
+      position: relative;
+      z-index: 10;
+      
+      img {
+         width: 100%;
+         @include paddingRL(calc(1.5rem));
+         padding-top: 1.5rem;
+         padding-bottom: 1.5rem;
+      }
+   }
+   &_back {
+      position: absolute;
+      bottom: -4rem;
+      z-index: -10;
+      height: auto;
+      width: 100%;
+
+      svg{
+         height: 100%;
+         bottom: 0;
+      }
+      
+      path{
+         height: 110%;
+      }
+   }
+
+   &_Title {
+      position: relative;
+      z-index: 10;
+      padding: 1.5rem;
+      background-color: $darkBlueBackground;
+   }
+   &_Text {
+      background-color: $darkBlueBackground;
+      @include paddingRL(calc(1.5rem * 2));
+      padding-bottom: 1.5rem;
+      text-align: center;
+   }
+   &_Btn {
+      background-color: $darkBlueBackground;
+   }
+}

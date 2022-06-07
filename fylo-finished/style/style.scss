@@ -14,15 +14,23 @@ body{
    font-weight: 400;
    font-size: $fontBody;
    background-color: $darkBlueBackground;
+   color: $white;
 }
 h1, h2, h3{
    font-weight: 700;
 }
-
+h1{
+   font-size: 1.8rem;
+   line-height: 1.5;
+}
 li{
    list-style: none;
 }
 
+
+.linteText{
+   line-height: 1.8;
+}
 
 @import 'mixin';
 @import 'nav';
