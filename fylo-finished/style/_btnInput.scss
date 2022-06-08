@@ -1,0 +1,12 @@
+.btnBig{
+   width: 100%;
+   background-color: $blue;
+   border-radius: 50px;
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
+   @include paddingRL(0);
+   font-size: 1.2rem;
+   color: #fff;
+   border: none;
+   letter-spacing: 1px;
+}
