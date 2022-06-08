@@ -1,0 +1,18 @@
+.Content_products{
+   @include paddingRL(0);
+   text-align: center;
+}
+.product{
+   
+   &_Icon{
+      padding-bottom: 2rem;
+   }
+   
+   &_Title{
+      padding-bottom: 1rem;
+   }
+   
+   &:not(:last-child){
+      margin-bottom: 7rem;
+   }
+}
