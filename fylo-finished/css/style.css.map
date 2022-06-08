@@ -6,7 +6,8 @@
         "../style/_variables.scss",
         "../style/_mixin.scss",
         "../style/_nav.scss",
-        "../style/_main.scss"
+        "../style/_main.scss",
+        "../style/_btnInput.scss"
     ],
     "names": [],
     "file": "style.css"
