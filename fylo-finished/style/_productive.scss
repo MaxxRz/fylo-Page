@@ -1,0 +1,40 @@
+.productive {
+   @include paddingRL(0);
+
+   &_Image img {
+      width: 100%;
+      padding-bottom: calc(1.5rem * 2);
+   }
+
+   p {
+      padding-bottom: 1rem;
+   }
+}
+
+.productive_more {
+   padding-bottom: 0.5rem;
+   display: inline-flex;
+   border-bottom: 1px solid $cyan;
+   align-items: center;
+   height: auto;
+
+   a {
+      height: 100%;
+      padding-right: .5rem;
+      color: $cyan;
+   }
+
+   svg{
+      width: 20px;
+   }
+
+   &:hover svg{
+      animation: productiveArrow .5s alternate infinite;
+   }
+}
+
+@keyframes productiveArrow{
+   100%{
+      transform: translateX(5px);
+   }
+}
