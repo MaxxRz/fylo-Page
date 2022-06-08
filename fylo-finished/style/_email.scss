@@ -1,0 +1,21 @@
+.email {
+   @include paddingRL(0);
+   text-align: center;
+   background: linear-gradient(180deg, rgba(24,31,42,1) 50%, rgba(11,21,35,1) 50%); 
+   &_Content {
+      border-radius: 5px;
+      background-color: $darkBlue;
+      -webkit-box-shadow: 0px 4px 14px -3px rgba(19, 25, 33, 1);
+      -moz-box-shadow: 0px 4px 14px -3px rgba(19, 25, 33, 1);
+      box-shadow: 0px 4px 14px -3px rgba(19, 25, 33, 1);
+      padding:  2.5rem 2rem;
+   }
+   
+   &_InputBtn input, &_InputBtn button{
+      margin-top: 2rem;
+   }
+}
+
+.email_InputBtn input:error{
+
+}
