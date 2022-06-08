@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
 *,
 *::after,
 *::before{
@@ -6,18 +8,19 @@
    box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import 'variables';
 
 body{
    font-family: 'Raleway', sans-serif;
    font-weight: 400;
-   font-size: $fontBody;
+   font-size: $fontSizeBody;
    background-color: $darkBlueBackground;
    color: $white;
+   font-family: $fontBody;
 }
 h1, h2, h3{
    font-weight: 700;
+   font-family: $fontTitle;
 }
 h1{
    font-size: 1.8rem;
@@ -26,7 +29,12 @@ h1{
 li{
    list-style: none;
 }
-
+p{
+   letter-spacing: 1px;
+}
+section:not(.main){
+   margin-top: 10rem;
+}
 
 .linteText{
    line-height: 1.8;

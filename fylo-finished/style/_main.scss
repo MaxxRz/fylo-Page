@@ -43,6 +43,7 @@
       text-align: center;
    }
    &_Btn {
+      @include paddingRL(calc(1.5rem * 2));
       background-color: $darkBlueBackground;
    }
 }
