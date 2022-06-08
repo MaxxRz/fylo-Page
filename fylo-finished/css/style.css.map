@@ -11,7 +11,8 @@
         "../style/_products.scss",
         "../style/_productive.scss",
         "../style/_testimonials.scss",
-        "../style/_email.scss"
+        "../style/_email.scss",
+        "../style/_footer.scss"
     ],
     "names": [],
     "file": "style.css"
