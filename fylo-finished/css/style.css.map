@@ -8,7 +8,8 @@
         "../style/_nav.scss",
         "../style/_main.scss",
         "../style/_btnInput.scss",
-        "../style/_products.scss"
+        "../style/_products.scss",
+        "../style/_productive.scss"
     ],
     "names": [],
     "file": "style.css"
