@@ -1,0 +1,91 @@
+footer{
+   @include paddingRL(0);
+   padding-top: 10rem;
+   padding-bottom: 3rem;
+   background-color: $darkBluefooter;
+   font-size: 16px;
+
+   img{
+      margin-bottom: 3rem;
+      width: 65%;
+      @include paddingRL(1rem);
+   }
+}
+
+.contacto{
+   > div{
+      display: flex;
+      align-items: center;
+      padding-bottom: 1.5rem;
+   }
+
+   &_icon{
+      width: 25px;
+      margin-right: 2rem;
+      height: 20px;
+      transform: translateY(5px);
+   }
+   p{
+      width: 100%;
+   }
+}
+.contacto .contacto_map{
+   align-items: flex-start;
+}
+
+
+.links{
+   margin-top: 5rem;
+   
+   &_block:last-child{
+      margin-top: 3rem;
+   }
+   &_block div{
+      cursor: pointer;
+      
+      p{
+         padding-bottom: .5rem;
+         display: inline-block;
+         border-bottom: 1px solid transparent;
+         transition: all .2s;
+
+      }
+      &:hover p{
+         color:$cyan;
+         border-bottom-color: $cyan;
+      }
+   }
+
+   &_block div:not(:last-child){
+      margin-bottom: 1rem;
+   }
+}
+.social{
+   text-align: center;
+   margin: 5rem auto 0;
+   width: 50%;
+   display: flex;
+   justify-content: space-around;
+
+   i{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #Fff;
+      padding: .5rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all .2s;
+
+      &:hover{
+         font-size: 1.5rem;
+         transform: scale(1.2);
+         color: $darkBluefooter;
+         background-color: $cyan;
+         border-color: $cyan;
+      }
+   }
+
+}
