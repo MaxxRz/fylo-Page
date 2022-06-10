@@ -8,3 +8,9 @@
          padding-right: 1.5rem;
       }
 }
+
+@mixin responsiveDesktop{
+   @media screen and (min-width: 763px){
+      @content;
+   }
+}

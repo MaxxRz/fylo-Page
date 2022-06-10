@@ -5,10 +5,19 @@ footer{
    background-color: $darkBluefooter;
    font-size: 16px;
 
+   @include responsiveDesktop{
+      @include paddingRL(calc((100% - 85%) / 2));
+   }
+
    img{
       margin-bottom: 3rem;
       width: 65%;
       @include paddingRL(1rem);
+
+      @include responsiveDesktop{
+         width: 30%;
+         max-width: 280px;
+      }
    }
 }
 
@@ -28,17 +37,43 @@ footer{
    p{
       width: 100%;
    }
+
+   @include responsiveDesktop{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;;
+      width: 100%;
+      column-gap: 1.5rem;
+   }
 }
 .contacto .contacto_map{
    align-items: flex-start;
+
+   @include responsiveDesktop{
+      grid-row: 1 / span 2;
+   }
 }
 
 
 .links{
    margin-top: 5rem;
+
+   @include responsiveDesktop{
+      margin-top: 0;
+      display: flex;
+
+      &_block{
+         width: 50%;
+      }
+   }
    
    &_block:last-child{
       margin-top: 3rem;
+
+      @include responsiveDesktop{
+         margin-top: 0;   
+      }
+      
    }
    &_block div{
       cursor: pointer;
@@ -67,6 +102,11 @@ footer{
    display: flex;
    justify-content: space-around;
 
+   @include responsiveDesktop{
+      margin-top: 0; 
+      width: 100%;
+   }
+
    i{
       display: flex;
       justify-content: center;
@@ -88,4 +128,14 @@ footer{
       }
    }
 
+}
+
+
+@include responsiveDesktop{
+   .footer_Datos{
+      display: grid;
+      grid-template-columns: 4fr 1.5fr 1fr;
+      align-items: flex-start;
+      column-gap: 5rem;
+   }
 }

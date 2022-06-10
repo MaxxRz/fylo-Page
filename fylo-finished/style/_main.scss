@@ -2,30 +2,43 @@
    text-align: center;
    background-color: $darkBlue;
 
+   @include responsiveDesktop {
+      background: rgb(32, 42, 55);
+      background: linear-gradient(180deg, rgba(32, 42, 55, 1) 50%, rgba(24, 31, 42, 1) 50%);
+   }
+
    &_Img {
       position: relative;
       z-index: 10;
-      
+
       img {
          width: 100%;
          @include paddingRL(calc(1.5rem));
          padding-top: 1.5rem;
          padding-bottom: 1.5rem;
+
+         @include responsiveDesktop {
+            max-width: 690px;
+            padding-bottom: 2rem;
+         }
       }
    }
    &_back {
-      position: absolute; 
+      position: absolute;
       bottom: -4rem;
       z-index: -10;
       height: auto;
       width: 100%;
+      @include responsiveDesktop {
+         bottom: -5rem;
+      }
 
-      svg{
+      svg {
          height: 100%;
          bottom: 0;
       }
-      
-      path{
+
+      path {
          height: 110%;
       }
    }
@@ -45,5 +58,17 @@
    &_Btn {
       @include paddingRL(calc(1.5rem * 2));
       background-color: $darkBlueBackground;
+
+      @include responsiveDesktop {
+         max-width: 450px;
+         margin: 0 auto;
+      }
    }
 }
+@include responsiveDesktop {
+   .main_Title,
+   .main_Text {
+      max-width: 650px;
+      margin: 0 auto;
+   }
+} ;

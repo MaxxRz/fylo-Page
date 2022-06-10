@@ -9,6 +9,7 @@
 }
 
 @import 'variables';
+@import 'mixin';
 
 body{
    font-family: 'Raleway', sans-serif;
@@ -17,6 +18,8 @@ body{
    background-color: $darkBlueBackground;
    color: $white;
    font-family: $fontBody;
+   
+  
 }
 h1, h2, h3{
    font-weight: 700;
@@ -25,9 +28,17 @@ h1, h2, h3{
 h1{
    font-size: 1.8rem;
    line-height: 1.5;
+
+   @include responsiveDesktop{
+      font-size: 2rem;
+   }
 }
 h2{
    padding-bottom: 1rem;
+
+   @include responsiveDesktop{
+      font-size: 1.8rem;
+   }
 }
 li{
    list-style: none;
@@ -47,7 +58,7 @@ section:not(.main){
    line-height: 1.8;
 }
 
-@import 'mixin';
+
 @import 'nav';
 @import 'main';
 @import 'btnInput';

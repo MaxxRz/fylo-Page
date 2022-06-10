@@ -8,11 +8,20 @@
    background-color: $darkBlue;
    font-family: $fontTitle;
 
+   @include responsiveDesktop{
+      padding-top: 2rem;
+      @include paddingRL(calc(1.5rem * 2));
+   }
+
    &_logo {
       width: 30%;
       max-width: 250px;
       min-width: 100px;
       height: auto;
+
+      @include responsiveDesktop{
+         max-width: 150px;
+      }
    }
 
    &_list li {

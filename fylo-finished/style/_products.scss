@@ -1,14 +1,32 @@
 .Content_products{
    @include paddingRL(0);
    text-align: center;
+   
+   @include responsiveDesktop {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 950px;
+      column-gap: 100px;
+      row-gap: 150px;
+   } 
 }
 .product{
    
    &_Icon{
       padding-bottom: 2rem;
+
+      @include responsiveDesktop {
+         height: 120px;
+         display: flex;
+         justify-content: center;
+      } 
    }
      
    &:not(:last-child){
       margin-bottom: 7rem;
    }
+   @include responsiveDesktop {
+      margin-bottom: 0rem!important;
+   } 
 }

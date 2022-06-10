@@ -2,11 +2,27 @@
    @include paddingRL(0);
    position: relative;
 
+   @include responsiveDesktop{
+      width: 85%;
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 3rem;
+      align-items: baseline;
+   }
+
    & > img{
       width: 35px;
       position: absolute;
       top: -30px;
       z-index: -1;
+
+      @include responsiveDesktop{
+         width: 55px;
+         left: 20px;
+         top: -40px;
+      }
    }
 
    &_Cards {

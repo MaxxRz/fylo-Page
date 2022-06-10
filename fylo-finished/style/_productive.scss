@@ -4,10 +4,23 @@
    &_Image img {
       width: 100%;
       padding-bottom: calc(1.5rem * 2);
+      
+      @include responsiveDesktop{
+         width: 90%;
+      }
    }
 
    p {
       padding-bottom: 1rem;
+   }
+
+   @include responsiveDesktop{
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      align-items: center;
+      width: 85%;
+      max-width: 1400px;
+      margin: 0 auto;
    }
 }
 
@@ -36,5 +49,12 @@
 @keyframes productiveArrow{
    100%{
       transform: translateX(5px);
+   }
+}
+
+
+@include responsiveDesktop{
+   .productive_Title{
+      max-width: 250px;
    }
 }
